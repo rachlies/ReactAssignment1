@@ -1,10 +1,10 @@
 import React from 'react';
+import './User.css';
 
-const output = () => {
+const output = (props) => {
     return (
-        <div>
-           <p>Para1</p>
-           <p>Para1</p>
+        <div className="User">
+           <p onClick = {props.click}>Para2 for {props.username}</p>
         </div>
     );
 }
